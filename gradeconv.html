@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="gradeconv-script.js"></script>
+</head>
+<body>
+    <header class="website-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="gradeconv.html">Grade Converter</a></li>
+                <li><a href="tempconv.html">Temperature Converter</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+    <main>
+        <p>Enter your mark below: </p>
+        <div id="container" name="container">
+            <form onsubmit="MarkToGrade()" id="mark-form">
+                <input type="number" name="mark-input-box" id="mark">
+                <button type="submit">Submit</button>
+            </form>
+            <br><br>
+            <p id="result"></p>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="staff-script.js" defer></script>
+</head>
+<body>
+    <header class="website-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="gradeconv.html">Grade Converter</a></li>
+                <li><a href="tempconv.html">Temperature Converter</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+    <h3>Staff List</h3>
+    <br>
+
+    <div id="buttons">
+        <button onclick="sortByNameAsc()">Sort By Name Ascending</button>
+        <button onclick="sortByNameDes()">Sort By Name Descending</button>
+        <button onclick="sortBySalaryAsc()">Sort By Salary Ascending</button>
+        <button onclick="sortBySalaryDes()">Sort By Salary Descending</button>
+    </div>
+    <br>
+
+    <ul id="staff-list">
+        <!--our staff script will populate this on DOM content load-->
+    </ul>
+</body>
+</html>

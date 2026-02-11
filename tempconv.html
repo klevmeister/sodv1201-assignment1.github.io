@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="tempconv-script.js"></script>
+</head>
+<body>
+    <header class="website-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Profile</a></li>
+                <li><a href="gradeconv.html">Grade Converter</a></li>
+                <li><a href="tempconv.html">Temperature Converter</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+    <main>
+        <div id="container" name="container">
+            <p>Enter the temperature value below, then select the unit you are converting from.</p><br>
+            <p>The website will automatically convert to the other two units listed.</p><br>
+
+            <form id="temp-form">
+                <input type="number" name="temp-input-box" id="temp">
+                <button type="button" onclick="convertFromCelsius()">Celsius</button>
+                <button type="button" onclick="convertFromFahrenheit()">Fahrenheit</button>
+                <button type="button" onclick="convertFromKelvin()">Kelvin</button>
+            </form><br><br>
+
+            <p id="result"></p>
+        </div>
+    </main>
+</body>
+</html>
