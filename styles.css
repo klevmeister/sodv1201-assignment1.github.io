@@ -70,3 +70,8 @@ img {
   margin-right: auto;
   width: 300px;
 }
+
+footer {
+    color: #888;
+    text-align: center;
+}
